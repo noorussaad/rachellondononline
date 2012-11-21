@@ -1,0 +1,9 @@
+
+.col1, .col2, .col3, .cols { float:left;}
+
+.col1{ width:310px;}
+.col2{ width:270px;}
+.cols{ width:93px;}
+
+#page_locations .col2{ width:590px;}
+

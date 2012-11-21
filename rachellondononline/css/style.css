@@ -1,0 +1,134 @@
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.wrapper {width:100%; overflow:hidden;}
+.relative{ position:relative;}
+.none{ display:none}
+
+/* Global properties ======================================================== */
+
+body{ background:#151515; border:0; font:13px Arial, Helvetica, sans-serif; color:#737373; line-height:18px; min-width:1050px; overflow:hidden}
+
+
+/* Global Structure ============================================================= */
+
+.main {	margin: 0 auto;	width: 950px; padding:0 50px; position:relative; padding-top:68px;}
+
+#bgStretch {overflow:hidden;z-index:-1; position:fixed}
+.spinner {width:100%;height:100%;position: fixed;z-index:0;left:0;top:0;background: url(../images/ajax-loader.gif) center center no-repeat;}
+
+.page_spinner{ position:absolute;background: url(../images/ajax-loader.gif) 50% 50% no-repeat #151515; z-index:99; width:100%; height:100%; top:0; left:0}
+
+/* ============================= main layout ====================== */
+
+a{ color:#737373; text-decoration: none; outline:none}
+a:hover{ text-decoration: none}
+h1{ float:left; margin-left:-35px;}
+h2{ font-size:40px; color:#161616; line-height:1.2em; padding:17px 0 11px 0; border-bottom:2px solid #e5e5e5; margin-bottom:15px;}
+h2.pad2{ padding:26px 13px 13px 13px; margin-bottom:0}
+p{ padding-bottom:18px;}
+
+/* ============================= header ====================== */
+header{ height:186px;}
+
+#bg_pagination{ position:absolute; top:0; right:85px;}
+#bg_pagination li{ position:relative; width:22px; float:left; margin-right:1px}
+#bg_pagination span{ position: absolute; top:-71px; left:0; height:71px; width:100%; background:url(../images/bg_pagination.png) 0 0 no-repeat}
+#bg_pagination a{ color:#8a8a8a; text-decoration:none; line-height:54px; display:block; text-align:center; position:relative;}
+#bg_pagination a:hover, #bg_pagination .active a{ color:#0f0f0f}
+
+#logo{ display:block; text-indent:-9999px; background:url(../images/logo.png) 0 0 no-repeat; width:265px; height:86px;}
+
+.menu{ float:right; padding:18px 38px 0 0}
+.menu ul{ float:left; width:85px; padding-left:25px;}
+.menu .last{ padding-right:31px;}
+.menu li { padding-bottom:6px;}
+.menu a{ color:#6e6e6e; display:inline-block; text-transform:uppercase; text-decoration:none; position:relative;}
+.menu a span{position:absolute; bottom:0; height:1px; width:0; background:#fff; left:0}
+.menu a:hover, .menu .active a{ color:#fff}
+
+/* ============================= content ====================== */
+
+#content{ height:506px; position:relative; width:950px;}
+#content > ul, #content > ul > li{ height:100%; width:100%;}
+
+.close{ position: absolute; top:-41px; background:url(../images/close.gif) 0 0 no-repeat; width:21px; height:21px; display:block; right:0}
+
+.line1{ background: url(../images/line_vert1.gif) 334px 0 repeat-y;}
+.line2{ background: url(../images/line_vert1.gif) 654px 0 repeat-y;}
+
+.link1{ position:relative; display:inline-block;}
+.link1 span{ position: absolute; bottom:0; left:0; width:100%; height:1px}
+
+.pad_left1{ padding-left:50px;}
+.pad1{ padding:0 20px;}
+.pad2{ padding:17px 13px}
+.pad_bot1{ padding-bottom:6px;}
+.pad_bot2{ padding-bottom:32px;}
+
+.box{ background:#fff; height:476px;}
+
+.font1{ font:18px "Trebuchet MS", Arial, Helvetica, sans-serif; line-height:20px; text-transform:uppercase; padding:13px 0 11px 0}
+.font1 a{ color:#131313}
+.font1 a:hover{ color:#bbb}
+.font1 span{ color:#131313; cursor:pointer}
+.font1 span:hover{ color:#bbb}
+
+.color1{ color:#1e1e1e}
+
+.underline{  border-bottom:2px solid #e5e5e5; margin-bottom:19px; padding-bottom:21px;}
+
+.button1{ display:inline-block; font-size:20px; line-height:1.2em; padding-left:20px; color:#131313; text-transform:uppercase; background:url(../images/marker_1.gif) 0 9px no-repeat;}
+.button1:hover{ color:#999; background-position:0 -11px}
+
+.gallery{ padding:17px;}
+
+.gallery > div{ width:914px !important;}
+.gallery li{ float: left; width:221px; margin-right:10px;}
+.gallery a{ margin-bottom:10px; display:block; position:relative; overflow:hidden}
+.gallery img{ width:221px; height:216px;}
+
+.prev{ position:absolute; left:-49px; top:220px; background:url(../images/marker_left.png) 0 0 no-repeat; display:block; width:26px; height:48px;}
+.prev span{ display:block; width:100%; height:100%; top:0; left:0; background:url(../images/marker_left.png) 0 bottom no-repeat;}
+
+.next{ position:absolute; right:-49px; top:220px; background:url(../images/marker_right.png) 0 bottom no-repeat; display:block; width:26px; height:48px;}
+.next span{ display:block; width:100%; height:100%; top:0; left:0; background:url(../images/marker_right.png) 0 0 no-repeat;}
+
+.caption{ position:absolute; bottom:-100px; left:0; right:0; padding:10px 14px 10px 14px; color:#fff; display:block; background:url(../images/bg_caption.png) repeat;}
+.caption strong{ display:block;}
+
+#map{ margin-bottom:33px}
+
+.scroll{height:325px; width:820px; overflow:hidden}
+.track{ width:1px; height:325px; padding:30px 0; top:60px !important; left:870px !important; background:#e5e5e5}
+.shuttle{ width:5px; height:55px; background:#1e1e1e; margin-left:-2px;}
+._up-butt, ._down-butt{ height:0px !important;}
+
+
+/* ============================= footer ====================== */
+
+footer { padding-top:28px; padding-bottom:33px;background:url(../images/line_hor1.gif) 0 0 repeat-x; color:#848484}
+footer a{ color:#848484}
+footer a:hover{}
+
+/* ============================= forms ============================= */
+
+#ContactForm{ padding-top:19px; position: relative}
+#ContactForm .wrapper{ overflow:inherit; min-height:51px;}
+#ContactForm .success{ display:none; position:absolute; bottom:-3px;}
+#ContactForm label{ position:relative;min-height:22px; display: inline-block;}
+#ContactForm .message{ min-height:254px;}
+#ContactForm  span{ display:block}
+#ContactForm .error, #ContactForm .empty{ font-size:10px; color:#000; line-height:14px; display:none; width:100%}
+#ContactForm a{ margin-left:20px; float:right;}
+#ContactForm .input { margin:0;width:361px; height:16px; background:#dcdada; border-left:1px solid #c3c2c2; border-top:1px solid #c3c2c2; padding:12px 13px;color:#767676; font:13px Arial, Helvetica, sans-serif;}
+#ContactForm textarea { overflow: auto; margin:0;width:521px; height:216px; background:#dcdada; border-left:1px solid #c3c2c2; border-top:1px solid #c3c2c2; padding:12px 13px;color:#767676; font:13px Arial, Helvetica, sans-serif;}
+
+
+
